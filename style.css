@@ -1,0 +1,67 @@
+ /* Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%) 
+ Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)*/
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+    
+}
+.container{
+    width:400px;
+    margin:auto;
+}
+.up{
+background-color:hsl(10, 79%, 65%) ;
+color:white;
+display:flex;
+justify-content: space-between;
+padding:1rem 1rem;
+border-radius: 20px;
+align-items: center;
+line-height:1;
+margin-bottom: 1rem;
+}
+.up p:first-child{
+    font-size:12px;
+    
+}
+.up p:last-child{
+font-weight: 700;
+}
+.down{
+background-color: hsl(33, 100%, 98%)  ;
+border-radius:20px;
+padding:1rem;
+
+}
+.down .spent{
+    font-weight: 700;
+    font-size: 20px;
+    color:hsl(25, 47%, 15%);
+}
+
+.days{
+    display: flex;
+    align-items: flex-end;
+    gap:1rem;
+    justify-content: center;
+
+}
+.grup div{
+    background-color:hsl(10, 79%, 65%);
+    width:35px;
+    border-radius: 5px;
+
+}
+.grup p{
+    color:hsl(28, 10%, 53%),
+}
+.alt-desc{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 4px;
+}
