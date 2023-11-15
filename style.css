@@ -1,67 +1,107 @@
- /* Dark brown: hsl(25, 47%, 15%)
+/* Dark brown: hsl(25, 47%, 15%)
 - Medium brown: hsl(28, 10%, 53%)
 - Cream: hsl(27, 66%, 92%)
 - Very pale orange: hsl(33, 100%, 98%) 
  Soft red: hsl(10, 79%, 65%)
 - Cyan: hsl(186, 34%, 60%)*/
-body{
-    background-color: hsl(27, 66%, 92%);
-    font-size: 18px;
-    
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-size: 18px;
 }
-.container{
-    width:400px;
-    margin:auto;
+.container {
+  width: 400px;
+  margin: 5rem auto;
 }
-.up{
-background-color:hsl(10, 79%, 65%) ;
-color:white;
-display:flex;
-justify-content: space-between;
-padding:1rem 1rem;
-border-radius: 20px;
-align-items: center;
-line-height:1;
-margin-bottom: 1rem;
+.up {
+  background-color: hsl(10, 79%, 65%);
+  line-height: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
-.up p:first-child{
-    font-size:12px;
-    
+.up p:first-child {
+  font-size: 12px;
 }
-.up p:last-child{
-font-weight: 700;
+.up p:last-child {
+  font-weight: 700;
 }
-.down{
-background-color: hsl(33, 100%, 98%)  ;
-border-radius:20px;
-padding:1rem;
+.up img {
+  width: 50px;
+}
+.down {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.down .spent {
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 3rem;
+}
 
+.days {
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+  justify-content: center;
 }
-.down .spent{
-    font-weight: 700;
-    font-size: 20px;
-    color:hsl(25, 47%, 15%);
+.grup .amount {
+  background-color: hsl(10, 79%, 65%);
+  width: 40px;
+  border-radius: 5px;
+}
+.grup p {
+  width:40px;
+  text-align: center;
+  color: hsl(28, 10%, 53%);
+  font-size: 12px;
+}
+.alt-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 4px;
+}
+.go {
+    text-align: center;
+  margin-bottom: 0.7rem;
+  color: hsl(27, 66%, 92%);
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px;
+  position: relative;
+  top: -30px;
+  opacity:0;
+  transition: opacity 0.3s ease;
+}
+.amount:hover {
+  cursor: pointer;
+  opacity:0.7;
+}
+.amount:hover .go {
+  opacity:1;
 }
 
-.days{
-    display: flex;
-    align-items: flex-end;
-    gap:1rem;
-    justify-content: center;
+@media (max-width:600px) {
+    .container{
+        width:300px;
+    }
+    .days {
+        gap:5px;
+    }
+    .grup .amount{
+        width:30px;
+    }
+    .grup p{
+        width:30px;
+    }
 
-}
-.grup div{
-    background-color:hsl(10, 79%, 65%);
-    width:35px;
-    border-radius: 5px;
-
-}
-.grup p{
-    color:hsl(28, 10%, 53%),
-}
-.alt-desc{
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    line-height: 4px;
 }
